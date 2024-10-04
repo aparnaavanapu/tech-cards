@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Write CSS code here */
+.card-1 {
+  border-top: 5px solid #ff4f64;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.card-2 {
+  border-top: 5px solid #00a8e7;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-3 {
+  border-top: 5px solid #44c4a1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.card-4 {
+  border-top: 5px solid #fcc200;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 20px;
+  width: 50%;
+}
+.heading {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 28px;
+}
+.description {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 0px;
+}
+.card-title {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.card-description {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin: 0px;
+  text-align: left;
+}
+.card-image {
+  width: 70px;
+  height: 70px;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.bg-container {
+  background-color: #f4faff;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 562px) {
+  .cards-container {
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  .card-1 {
+    width: 90%;
+  }
+  .card-2 {
+    width: 90%;
+  }
+  .card-3 {
+    width: 90%;
+  }
+  .card-4 {
+    width: 90%;
+  }
+  .description {
+    font-size:15px;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+  .card-1 {
+    width: 40%;
+  }
+  .card-2 {
+    width: 40%;
+  }
+  .card-3 {
+    width: 40%;
+  }
+  .card-4 {
+    width: 40%;
+  }
+  .description {
+    font-size: 18px;
+
   }
 }
